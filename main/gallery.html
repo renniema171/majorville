@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majorville Summer Solstice Festival</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+@media (width < 750px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, max-content) minmax(1fr, 1500px) repeat(2, max-content);
+        grid-template-areas: 
+        "logo"
+        "."
+        "main"
+        "main"
+        ".";
+    }
+    .content-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50%;
+        grid-template-areas:
+        "content";
+        gap: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <img src="majorvillelogo.png" alt="Majorville Logo" class="logo">
+        <nav class="navAll">
+            <ul>
+                <a href="index.html" class="navInd">Home</a>
+                <a href="history.html" class="navHist">History</a>
+                <a href="activities.html" class="navAct">Activities</a>
+                <a href="gallery.html" class="navImg">Images</a>
+            </ul>
+        </nav>
+        <main>
+            <div class="content-box">
+                <p class="content">
+                </p>
+            </div>
+        </main>
+        <footer><p>&copy; 2024 Majorville Chamber of Commerce</p></footer>
+    </div>
+</body>
+</html>

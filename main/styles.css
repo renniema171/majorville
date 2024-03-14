@@ -3,6 +3,20 @@
     margin: 0;
     padding: 0;
 }
+p {
+    font-family: 'spectral', Times;
+}
+h2 {
+    font-family: pristina;
+    font-size: 2.8em;
+}
+h3 {
+    font-family: pristina;
+    font-size: 2em;
+}
+/* a {
+    color: black;
+} */
 img {
     max-width: 100%;
 }
@@ -40,6 +54,9 @@ header {
     "navInd navHist . . navAct navImg";
     align-items: center;
     max-height: 150px;
+}
+.navAll ul a {
+    color: black;
 }
 .navInd {
     grid-area: navInd;
@@ -117,11 +134,11 @@ aside div p {
     text-align: center;
     padding: 10px;
     margin: 5px;
-    background-color: azure;
+    background-color: rgba(255,0,80,1);
     font-size: 1.5rem;
 }
 .navAct:hover, .navHist:hover, .navImg:hover, .navInd:hover {
-    background-color: rgb(from azure 130 150 220);
+    background-color: rgba(255,0,80,.7);
 }
 .navAct:active, .navHist:active, .navImg:active, .navInd:active {
     margin: 20px;

@@ -7,9 +7,49 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .default {
-    display: block;
-    list-style-type: circle;
-}
+            display: block;
+            list-style-type: circle;
+            padding-left: 2rem;
+        }
+        .content p {
+            font-size: 1.8rem;
+        }
+        .content a {
+            display: block;
+            padding-left: 5px;
+            margin: 10px 0;
+        }
+        .content h2 {
+            padding-left: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .content-box {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-areas:
+            "content asd1"
+            "content asd2";
+        }
+        .asd1 {
+            grid-area: asd1;
+        }
+        .asd2 {
+            grid-area: asd2;
+        }
+        @media (width < 750px) {
+            .content-box {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 49% 25% 40%;
+                grid-template-areas:
+                "content"
+                "asd1"
+                "asd2";
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -27,8 +67,8 @@
         <main>
             <div class="content-box">
                 <div class="content">
-                    <p>Since the festival is planning on being open for a while, we have a list of activities and food trucks available at the venue.</p>
-                    <h2>List of Activities</h2>
+                    <h3>Since the festival is planning on being open for a while, we have a list of activities and food trucks available at the venue.</h3>
+                    <h3>List of Activities</h3>
                     <ul class="default">
                         <li>Live Music by Breathe Owl Breathe</li>
                         <li>Wagon Rides </li>
@@ -48,13 +88,19 @@
                         <li>Lumberjack Competitions: chopping, sawing, and speed pole climbing</li>
                         <li>Blacksmithing demonstration by Dan Nickels</li>
                     </ul>
-                    <h2>Food Trucks’ Menus</h2>
-                    <a class="default" href="https://www.pigseatinribs.com/food-truck">Pigs Eatin’ Ribs</a>
-                    <a class="deafult" href="http://dailyblendtc.com/">Daily Blend</a>
-                    <a class="default" href="http://dailyblendtc.com/">Good on Wheels</a>
-                    <a class="default" href="http://dailyblendtc.com/">TC Pizza Company</a>
+                    <h3>Food Trucks’ Menus</h3>
+                    <a href="https://www.pigseatinribs.com/food-truck">Pigs Eatin’ Ribs</a>
+                    <a href="http://dailyblendtc.com/">Daily Blend</a>
+                    <a href="http://dailyblendtc.com/">Good on Wheels</a>
+                    <a href="http://dailyblendtc.com/">TC Pizza Company</a>
                 </div>
-                <aside>
+                <aside class="asd1">
+                    <img src="summer-activity-.jpg" alt="Kids playing a game with a mentor">
+                    <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/38729417@N06/20145285332">Play, Learn, Serve, Work Summer Camp Program - Ranger Tori leading an activity</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/38729417@N06">Santa Monica Mountains National Recreation Area</a> is marked with <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/publicdomain/mark/1.0//?ref=openverse">Public Domain Mark 1.0 <img src="https://mirrors.creativecommons.org/presskit/icons/pd.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img></a>. </p>
+                </aside>
+                <aside class="asd2">
+                    <img src="food-truck.jpg" alt="Long line in front of a food truck">
+                    <p class="attribution">"<a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/13456343@N00/26481928">Food Trucks on Tech Street</a>" by <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/13456343@N00">ben.hollis</a> is licensed under <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img></a>. </p>
                 </aside>
             </div>
         </main>

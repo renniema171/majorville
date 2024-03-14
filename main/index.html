@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majorville Summer Solstice Festival</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @media (width < 750px) {
+            .content-box {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 63% 37%;
+                grid-template-areas:
+                "content"
+                "asd"
+                ;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">

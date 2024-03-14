@@ -99,6 +99,7 @@ main {
     grid-template-columns: 80% 20%;
     grid-template-areas:
     "content asd";
+    gap: 10px;
 }
 .content {
     grid-area: content;
